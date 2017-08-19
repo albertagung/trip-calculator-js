@@ -1,0 +1,44 @@
+<--VEHICLE DETAILS INPUT-->
+
+WRITE and SAVE "Vehicle Tank Capacity"
+WRITE and SAVE "Vehicle Kilometers Per Liter Rate"
+WRITE and SAVE "Vehicle Max Distance Before Service"
+
+<--SERVICE AND FUEL COST INPUT-->
+
+WRITE and SAVE "Fuel Cost Per Liter"
+WRITE and SAVE "Service Cost Per Cycle"
+
+<--TRIP DETAILS INPUT-->
+
+WRITE and SAVE
+  FOR LOOP (every distance added)
+    "Distance1, Distance2, Distance3, . . . ." <--comma separated-->
+WRITE and SAVE "Return" or "One Way Trip"
+SHOW and SAVE "Total Distance Traveled"
+SHOW and SAVE "Estimated Travel Time"
+
+<-- FUEL CALCULATION-->
+
+COMPUTE "Total Distance Traveled" divided by "Vehicle KPL"
+SAVE and SHOW result as "Fuel Needed per Trip"
+COMPUTE "Fuel Needed per Trip" divided by "Vehicle Tank Capacity"
+SAVE and SHOW result as "Refuel Needed Per Trip"
+COMPUTE "Fuel Needed per Trip" multiply by "Fuel Cost Per Liter"
+SAVE and SHOW result as "Refuel Cost Per Trip"
+COMPUTE "Vehicle Tank Capacity" reduce by "5" and multiply by "Vehicle Kilometers Per Liter Rate"
+
+<--SERVICE CALCULATION-->
+
+COMPUTE "Total Distance Traveled" divided by "Minimum KM Per Service"
+SAVE and SHOW result as "Vehicle Service Cycle Per Trip"
+COMPUTE "Vehicle Service Cycle Per Trip" multiply by "Service Cost Per Cycle"
+SAVE and SHOW result as "Vehicle Service Cost Per Trip"
+
+<--ODOMETER CALCULATION-->
+FOR LOOP (every trip added)
+  SHOW and SAVE "Total Distance Traveled"
+
+<--RESET FUNCTION-->
+
+CLEAR all "INPUT"

@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.section h3, h2 {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding-left: 37%;
+  padding-right: 35%;
+}
+
+/*.answer h3 {
+  text-align: center;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+}*/
+
+#yourInput,
+#theResults {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+
+}
+
+#IDvehicleTankCapacity,
+#IDvehicleKpl,
+#IDvehicleServiceDistance,
+#IDfuelCpl,
+#IDserviceCpc,
+#IDdistanceTraveled,
+#IDtripType,
+#IDdistanceTraveled,
+#IDfuelNeededResult,
+#IDrefuelNeededResult,
+#IDrefuelCostResult,
+#IDfillTankResult,
+#IDserviceCpcReturn,
+#IDodometerResult {
+  color: yellow;
+  text-align: center;
+}
+
+#startAgain {
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#startBtn {
+  margin-top: 20px;
+  margin-left: 44.2%;
+  background-color: yellow;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.againBtn #startBtn {
+  margin-top: 20px;
+  margin-left: 43.8%;
+  background-color: yellow;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: black;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.footer p {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
