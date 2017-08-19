@@ -77,7 +77,6 @@ function startJs () {
      return distanceTraveled / vehicleServiceDistance;
   }
   var servicePerTripResult = (servicePerTrip());
-  //console.log(servicePerTripResult);
   function serviceCpt () {
     return Math.round(servicePerTripResult * serviceCpc);
   }
@@ -93,15 +92,4 @@ function startJs () {
   console.log("Your vehicle odometer will be added " + odometerResult + " KM on this trip");
   document.getElementById("IDodometerResult").innerHTML = ("Your vehicle odometer will be added " + odometerResult + " KM on this trip")
   document.getElementById("startAgain").innerHTML = ('Click the "Start Now!" button to try again');
-  // //Trip time calculation
-  // function tripTime () {
-  //   for(var speed = 0; speed <= 100; speed+=10) {
-  //     var totalTime = speed * time;
-  //     for(var time = 0; time <= speed.length; time++) {
-  //       totalTime = speed + time;
-  //     }
-  //     console.log(totalTime);
-  //   }
-  // }
-  // tripTime()
 }

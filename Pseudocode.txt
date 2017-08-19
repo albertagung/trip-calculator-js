@@ -16,7 +16,6 @@ WRITE and SAVE
     "Distance1, Distance2, Distance3, . . . ." <--comma separated-->
 WRITE and SAVE "Return" or "One Way Trip"
 SHOW and SAVE "Total Distance Traveled"
-SHOW and SAVE "Estimated Travel Time"
 
 <-- FUEL CALCULATION-->
 
@@ -27,6 +26,7 @@ SAVE and SHOW result as "Refuel Needed Per Trip"
 COMPUTE "Fuel Needed per Trip" multiply by "Fuel Cost Per Liter"
 SAVE and SHOW result as "Refuel Cost Per Trip"
 COMPUTE "Vehicle Tank Capacity" reduce by "5" and multiply by "Vehicle Kilometers Per Liter Rate"
+SAVE and SHOW result as "Refuel tank after ... KM"
 
 <--SERVICE CALCULATION-->
 
@@ -41,4 +41,4 @@ FOR LOOP (every trip added)
 
 <--RESET FUNCTION-->
 
-CLEAR all "INPUT"
+START and REPEAT process button
