@@ -16,7 +16,6 @@ function startJs () {
   var serviceCpc = prompt("Insert your car maintenance cost (number only)");
   document.getElementById("IDserviceCpc").innerHTML = ("Your vehicle maintenance cost is: IDR " + serviceCpc);
 
-
   //Trip details input
   var distance = prompt("Insert your trip distances (can be multiple distance, seperate each distance with commas)");
   var distanceSplit = distance.split(",");
